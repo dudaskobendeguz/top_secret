@@ -12,6 +12,7 @@ def main():
         if link == 1:
             print("2: Nem, de szerintem most passzolom :)".center(middle()))
             print("3: Nem, és kíváncsi vagyok a Trailer-re ;)".center(middle()))
+            print("4: Nem.".center(middle()))
         elif link == 2:
             print("2: Nem, de szerintem most passzolom :)".center(middle()))
         else:
@@ -68,7 +69,8 @@ def main():
             input(" " * (int(middle() / 2)))
             choice = "1"
             return choice
-
+        elif choice == "4":
+            return choice
         elif choice == "1":
             return choice
         else:
@@ -78,7 +80,7 @@ def main():
 
     def again_or_not():
         clear()
-        print('Van kedved megnézni szombaton velünk moziban?'.center(middle()))
+        print('Van kedved megnézni a csapattal moziban?'.center(middle()))
         yes_no(link=3)
         wanna_watch_it = input(" " * (int(middle() / 2)))
         if wanna_watch_it == "2":
@@ -116,7 +118,7 @@ def main():
             print("mellé nyomtál. Próbáljuk meg újra :)".center(middle()))
             time.sleep(2)
             which_saturday()
-        if saturday == "1":
+        if saturday == "2":
             saturday = "Jövő hét szombat(október 9)"
         elif saturday == "3":
             saturday = "Mind 2 időpont jó nekem"
