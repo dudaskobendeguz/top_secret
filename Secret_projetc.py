@@ -3,6 +3,7 @@ import sys
 import os
 import shutil
 import webbrowser
+""">>>>>>>Légyszi ne írd át a file-okat(legalábbis push előtt ne, hogy másnál is működjön, kösziiii<<<<<<<<<<"""
 
 
 def main():
@@ -188,7 +189,7 @@ def main():
         date = which_date()
         date_or_dates = date_iterator(date)
         appender(nickname, partner, date_or_dates, saturday)
-        print("Köszönöm, hogy kitöltötted. Kérlek told vissza gitre :)".center(middle()))
+        print("Köszönöm, hogy kitöltötted. Kérlek told vissza gitre(commit message legyen a beceneved) :)".center(middle()))
 
     invite()
 
